@@ -9,11 +9,11 @@ Exibir um alerta no painel de controle.
 
 # Explicação
 Observer (Observador): Interface que define o método update(String message) para receber notificações.
-StockSubject (Sujeito):
+- StockSubject (Sujeito):
 Possui uma lista de observadores.
 Notifica os observadores quando o estoque atinge um limite crítico.
-EmailObserver, LogObserver, DashboardObserver:
+- EmailObserver, LogObserver, DashboardObserver:
 Observadores que implementam a interface Observer e executam ações específicas ao receber uma atualização.
-Main:
+- Main:
 Cria o StockSubject e adiciona observadores.
 Reduz o estoque e dispara notificações quando a quantidade chega ao limite.
